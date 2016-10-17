@@ -1,0 +1,17 @@
+{
+  "name": "stylelint-config-nvs",
+  "version": "0.0.1",
+  "description": "Stylelint shareable config used by Netvlies",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sjorsjes/stylelint-config-nvs.git"
+  },
+  "author": "Netvlies",
+  "license": "MIT",
+  "keywords": [
+    "stylelint",
+    "stylelintconfig",
+    "netvlies"
+  ]
+}
