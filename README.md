@@ -37,10 +37,10 @@ Or add the Stylelint config to your `package.json`:
 ```js
     var gulp = require('gulp');
     var stylelint = require('gulp-stylelint');
-    
+
     gulp.task('generateClientSass', function () {
         return gulp
-            .src('scss/*.scss')
+            .src(['scss/*.scss', '!scss/vendor/*.scss'])
             .pipe(stylelint({
                 syntax: 'scss',
                 reporters: [
