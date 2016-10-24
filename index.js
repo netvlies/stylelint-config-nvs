@@ -308,7 +308,7 @@ module.exports = {
 
         "indentation": "tab",
         "max-empty-lines": 2,
-        "max-line-length": 80,
+		"max-line-length": [80, { "ignore": ["comments"] }],
         "max-nesting-depth": 4,
         "no-browser-hacks": null,
         "no-descending-specificity": null,
