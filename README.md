@@ -55,6 +55,10 @@ Or add the Stylelint config to your `package.json`:
 * [Build tools](http://stylelint.io/user-guide/complementary-tools/#build-tool-plugins)
 * [Editor plugins](http://stylelint.io/user-guide/complementary-tools/#editor-plugins)
 
+## Update & Publish to NPM
+```npm version path```
+```npm publish```
+
 ## [Changelog](CHANGELOG.md)
 
 ## [License](LICENSE)
