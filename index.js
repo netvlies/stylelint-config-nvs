@@ -231,7 +231,7 @@ module.exports = {
         "declaration-block-trailing-semicolon": "always",
 
         "block-closing-brace-empty-line-before": "never",
-        "block-closing-brace-newline-after": "always",
+        "block-closing-brace-newline-after": ["always", { "ignoreAtRules": ["if", "else"] }],
         "block-closing-brace-newline-before": "always-multi-line",
         "block-closing-brace-space-after": null,
         "block-closing-brace-space-before": "always-single-line",
@@ -292,7 +292,7 @@ module.exports = {
         "media-query-list-comma-space-after": "always",
         "media-query-list-comma-space-before": "never",
 
-        "at-rule-empty-line-before": ["always", { "except": ["first-nested"] }],
+        "at-rule-empty-line-before": ["always", { "except": ["first-nested"], "ignore": ["blockless-after-same-name-blockless"], "ignoreAtRules": ["else"]}],
         "at-rule-name-case":"lower",
         "at-rule-name-newline-after": null,
         "at-rule-name-space-after": "always",
