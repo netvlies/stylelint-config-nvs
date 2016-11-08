@@ -63,3 +63,6 @@ Or add the Stylelint config to your `package.json`:
 ## [Changelog](CHANGELOG.md)
 
 ## [License](LICENSE)
+
+## Info
+* http://cssguidelin.es/
