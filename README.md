@@ -55,6 +55,9 @@ Or add the Stylelint config to your `package.json`:
 * [Build tools](http://stylelint.io/user-guide/complementary-tools/#build-tool-plugins)
 * [Editor plugins](http://stylelint.io/user-guide/complementary-tools/#editor-plugins)
 
+## Info
+* http://cssguidelin.es/
+
 ## [Update & Publish to NPM](https://docs.npmjs.com/cli/version)
 ```npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]```
 
@@ -63,6 +66,3 @@ Or add the Stylelint config to your `package.json`:
 ## [Changelog](CHANGELOG.md)
 
 ## [License](LICENSE)
-
-## Info
-* http://cssguidelin.es/
