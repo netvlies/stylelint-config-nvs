@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sjorsjes/stylelint-config-nvs.git"
+    "url": "git://github.com/netvlies/stylelint-config-nvs.git"
   },
   "main": "index.js"
 }
