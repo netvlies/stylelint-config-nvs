@@ -12,7 +12,7 @@ To make use of this config, install this package as a development dependency of 
 
 ## Usage
 
-Create a [`.stylelintrc`](http://eslint.org/docs/user-guide/configuring#configuration-file-formats) config file:
+Create a [`.stylelintrc`](http://stylelint.io/user-guide/configuration/) config file:
 
 ### .stylelintrc
 ```js
@@ -26,7 +26,7 @@ Or add the Stylelint config to your `package.json`:
 
 ```json
 {
-  "name": "my-awesome-project",
+  "name": "project",
   "stylelint": {
     "extends": "stylelint-config-nvs"
   }
@@ -56,13 +56,17 @@ Or add the Stylelint config to your `package.json`:
 * [Editor plugins](http://stylelint.io/user-guide/complementary-tools/#editor-plugins)
 
 ## Info
-* http://cssguidelin.es/
+* [cssguidelin.es](http://cssguidelin.es/)
 
 ## [Update & Publish to NPM](https://docs.npmjs.com/cli/version)
 ```npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]```
 
 ```npm publish```
 
-## [Changelog](CHANGELOG.md)
+## Changelog
 
-## [License](LICENSE)
+Read the [Changelog](CHANGELOG.md)
+
+## License
+
+MIT © [Netvlies](http://netvlies.nl)
