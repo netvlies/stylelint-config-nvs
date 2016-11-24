@@ -292,7 +292,7 @@ module.exports = {
 		"max-line-length": [100, { "ignore": ["comments"] }],
 		"max-nesting-depth": 4,
 		"no-browser-hacks": null,
-		"no-descending-specificity": true,
+		"no-descending-specificity": null,
 		"no-duplicate-selectors": true,
 		"no-empty-source": true,
 		"no-eol-whitespace": true,
