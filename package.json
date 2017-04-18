@@ -13,5 +13,8 @@
     "type": "git",
     "url": "git://github.com/netvlies/stylelint-config-nvs.git"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "stylelint-order": "^0.3.0"
+  }
 }

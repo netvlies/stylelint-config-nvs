@@ -1,5 +1,8 @@
 module.exports = {
 	"defaultSeverity": "warning",
+	"plugins": [
+		'stylelint-order',
+	],
 	"rules": {
 		"color-hex-case": "upper",
 		"color-hex-length": "short",
@@ -43,160 +46,111 @@ module.exports = {
 		"declaration-bang-space-before": "always",
 		"declaration-colon-space-after": "always",
 		"declaration-colon-space-before": "never",
-		"declaration-block-properties-order": [
-			"position",
-			"top",
-			"right",
-			"bottom",
-			"left",
-			"z-index",
 
-			"float",
-			"clear",
-
-			"flex",
+		"order/order": [
 			{
-				"order": "flexible",
+				"type": "at-rule",
+				"name": "extend"
+			},
+			{
+				"type": "at-rule",
+				"name": "include",
+				"parameter": /^(?!respond-to\(.*\)$)/
+			},
+			{
+				"type": "at-rule",
+				"name": "media"
+			},
+			"declarations",
+			"rules"
+		],
+		"order/properties-order": [
+			[{
 				"properties": [
-					"flex-basis",
-					"flex-direction",
-					"flex-flow",
-					"flex-grow",
-					"flex-shrink",
-					"flex-wrap",
-					"align-content",
-					"align-items",
-					"align-self",
+					"position",
+					"top",
+					"right",
+					"bottom",
+					"left",
+					"z-index"
+				]
+			},
+			{
+				"properties": [
+					"display",
+					"flex",
+					"align",
 					"justify-content",
 					"order"
 				]
 			},
-
-			"box-sizing",
-			"display",
-			"overflow",
-			"overflow-x",
-			"overflow-y",
-
-			"width",
-			"min-width",
-			"max-width",
-
-			"height",
-			"min-height",
-			"max-height",
-
-			"margin",
-			"margin-top",
-			"margin-right",
-			"margin-bottom",
-			"margin-left",
-			"padding",
-			"padding-top",
-			"padding-right",
-			"padding-bottom",
-			"padding-left",
-
-			"columns",
-			"column-gap",
-			"column-fill",
-			"column-rule",
-			"column-span",
-			"column-count",
-			"column-width",
-
-			"color",
-			"font",
-			"font-family",
-			"font-size",
-			"font-smoothing",
-			"font-style",
-			"font-variant",
-			"font-weight",
-			"font-feature-settings",
-
-			"letter-spacing",
-			"line-height",
-			"list-style",
-
-			"text-align",
-			"text-decoration",
-			"text-indent",
-			"text-overflow",
-			"text-rendering",
-			"text-shadow",
-			"text-transform",
-			"text-wrap",
-
-			"white-space",
-			"word-spacing",
-			"word-wrap",
-
-			"background",
-			"background-clip",
-			"background-color",
-			"background-image",
-			"background-position",
-			"background-size",
-			"background-repeat",
-			"border",
-			"border-top",
-			"border-right",
-			"border-bottom",
-			"border-left",
-			"border-width",
-			"border-top-width",
-			"border-right-width",
-			"border-bottom-width",
-			"border-left-width",
-			"border-style",
-			"border-top-style",
-			"border-right-style",
-			"border-bottom-style",
-			"border-left-style",
-			"border-radius",
-			"border-top-left-radius",
-			"border-top-right-radius",
-			"border-bottom-left-radius",
-			"border-bottom-right-radius",
-			"border-color",
-			"border-top-color",
-			"border-right-color",
-			"border-bottom-color",
-			"border-left-color",
-			"outline",
-			"outline-color",
-			"outline-offset",
-			"outline-style",
-			"outline-width",
-			"border-collapse",
-			"border-spacing",
-			"box-shadow",
-
 			{
-				"order": "flexible",
 				"properties": [
-					"caption-side",
-					"content",
-					"cursor",
-					"empty-cells",
-					"opacity",
-					"quotes",
-					"speak",
-					"table-layout",
-					"vertical-align",
-					"visibility"
+					"perspective",
+					"transform",
+					"float",
+					"clear"
 				]
 			},
-
-			"transform",
-			"transition"
+			{
+				"properties": [
+					"box-sizing",
+					"overflow",
+					"width",
+					"min-width",
+					"max-width",
+					"height",
+					"min-height",
+					"max-height",
+					"margin",
+					"padding"
+				]
+			},
+			{
+				"properties": [
+					"color",
+					"font",
+					"letter-spacing",
+					"line-height",
+					"list-style",
+					"text",
+					"white-space",
+					"word"
+				]
+			},
+			{
+				"properties": [
+					"background",
+					"border",
+					"outline",
+					"box-shadow"
+				]
+			},
+			{
+				"properties": [
+					"animation"
+				]
+			},
+			{
+				"properties": [
+					"transition"
+				]
+			}],
+			{
+				"unspecified": "bottom"
+			}
 		],
+		// Declaration block - http://stylelint.io/user-guide/rules/#declaration-block
+		"declaration-block-no-duplicate-properties": [true, {
+			ignore: ["consecutive-duplicates-with-different-values"],
+		}],
+		"declaration-block-no-redundant-longhand-properties": true,
+		"declaration-block-no-shorthand-property-overrides": true,
 		"declaration-block-semicolon-newline-after": "always-multi-line",
 		"declaration-block-semicolon-newline-before": "never-multi-line",
 		"declaration-block-semicolon-space-after": "always-single-line",
 		"declaration-block-semicolon-space-before": "never",
-		"declaration-block-single-line-max-declarations": null,
+		"declaration-block-single-line-max-declarations": 1,
 		"declaration-block-trailing-semicolon": "always",
 
 		"block-closing-brace-empty-line-before": "never",
@@ -225,7 +179,7 @@ module.exports = {
 		"selector-no-combinator": null,
 		"selector-no-id": true,
 		"selector-no-qualifying-type": [true, {
-			"ignore": ["attribute"]
+			"ignore": ["attribute", "class"]
 		}],
 		"selector-no-type": null,
 		"selector-no-universal": null,
@@ -236,7 +190,6 @@ module.exports = {
 		"selector-pseudo-element-case": "lower",
 		"selector-pseudo-element-colon-notation": "double",
 		"selector-pseudo-element-no-unknown": true,
-		"selector-root-no-composition": true,
 		"selector-type-case": "lower",
 		"selector-type-no-unknown": true,
 		"selector-max-empty-lines": 0,
@@ -246,14 +199,9 @@ module.exports = {
 		"selector-list-comma-space-after": "always-single-line",
 		"selector-list-comma-space-before": "never",
 
-		"root-no-standard-properties": true,
-
-		"rule-nested-empty-line-before": ["always", {
+		"rule-empty-line-before": ["always-multi-line", {
 			"except": ["first-nested"],
-			"ignore": ["after-comment"]
-		}],
-		"rule-non-nested-empty-line-before": ["always-multi-line", {
-			"ignore": ["after-comment"]
+			"ignore": ["after-comment"],
 		}],
 
 		"media-feature-colon-space-after": "always",
@@ -261,7 +209,6 @@ module.exports = {
 		"media-feature-name-case": "lower",
 		"media-feature-name-no-unknown": true,
 		"media-feature-name-no-vendor-prefix": true,
-		"media-feature-no-missing-punctuation": true,
 		"media-feature-range-operator-space-after": "always",
 		"media-feature-range-operator-space-before": "always",
 
@@ -271,9 +218,10 @@ module.exports = {
 		"media-query-list-comma-space-before": "never",
 
 		"at-rule-empty-line-before": ["always", {
-			"ignore": ["after-comment", "blockless-group", "all-nested"],
-			"ignoreAtRules": ["else"]
-        }],
+			"ignore": ["after-comment", "blockless-after-blockless", "inside-block"],
+			"ignoreAtRules": ["else"],
+		}],
+
 		"at-rule-name-case": "lower",
 		"at-rule-name-newline-after": null,
 		"at-rule-name-space-after": "always-single-line",
@@ -290,7 +238,7 @@ module.exports = {
 		"indentation": "tab",
 		"max-empty-lines": 2,
 		"max-line-length": [100, { "ignore": ["comments"] }],
-		"max-nesting-depth": 4,
+		"max-nesting-depth": 5,
 		"no-browser-hacks": null,
 		"no-descending-specificity": null,
 		"no-duplicate-selectors": true,
@@ -304,5 +252,3 @@ module.exports = {
 		"no-unsupported-browser-features": null
 	}
 }
-
-
