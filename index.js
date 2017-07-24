@@ -174,11 +174,9 @@ module.exports = {
 		"selector-descendant-combinator-no-non-space": true,
 		"selector-max-compound-selectors": 3,
 		"selector-max-specificity": null,
-		"selector-no-id": true,
 		"selector-no-qualifying-type": [true, {
 			"ignore": ["attribute", "class"]
 		}],
-		"selector-no-type": null,
 		"selector-no-universal": null,
 		"selector-no-vendor-prefix": true,
 		"selector-pseudo-class-case": "lower",
@@ -226,8 +224,6 @@ module.exports = {
 		"at-rule-no-vendor-prefix": true,
 		"at-rule-semicolon-newline-after": "always",
 
-		"stylelint-disable-reason": null,
-
 		"comment-empty-line-before": null,
 		"comment-no-empty": true,
 		"comment-whitespace-inside": null,
@@ -236,16 +232,13 @@ module.exports = {
 		"max-empty-lines": 2,
 		"max-line-length": [100, { "ignore": ["comments"] }],
 		"max-nesting-depth": 5,
-		"no-browser-hacks": null,
 		"no-descending-specificity": null,
 		"no-duplicate-selectors": true,
 		"no-empty-source": true,
 		"no-eol-whitespace": true,
 		"no-extra-semicolons": true,
-		"no-indistinguishable-colors": null,
 		"no-invalid-double-slash-comments": true,
 		"no-missing-end-of-source-newline": true,
-		"no-unknown-animations": true,
-		"no-unsupported-browser-features": null
+		"no-unknown-animations": true
 	}
 }
