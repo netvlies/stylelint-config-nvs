@@ -177,7 +177,6 @@ module.exports = {
 		"selector-no-qualifying-type": [true, {
 			"ignore": ["attribute", "class"]
 		}],
-		"selector-no-universal": null,
 		"selector-no-vendor-prefix": true,
 		"selector-pseudo-class-case": "lower",
 		"selector-pseudo-class-no-unknown": true,
