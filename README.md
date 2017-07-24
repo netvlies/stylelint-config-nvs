@@ -59,7 +59,7 @@ Or add the Stylelint config to your `package.json`:
 * [cssguidelin.es](http://cssguidelin.es/)
 
 ## [Update & Publish to NPM](https://docs.npmjs.com/cli/version)
-```npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]```
+```npm version [ major | minor | patch ]```
 
 ```npm publish```
 
