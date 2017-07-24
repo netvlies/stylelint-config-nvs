@@ -174,8 +174,6 @@ module.exports = {
 		"selector-descendant-combinator-no-non-space": true,
 		"selector-max-compound-selectors": 3,
 		"selector-max-specificity": null,
-		"selector-no-attribute": null,
-		"selector-no-combinator": null,
 		"selector-no-id": true,
 		"selector-no-qualifying-type": [true, {
 			"ignore": ["attribute", "class"]
