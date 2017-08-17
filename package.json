@@ -7,6 +7,9 @@
     "stylelintconfig",
     "netvlies"
   ],
+  "scripts": {
+    "test": "stylelint --config ./index.js --syntax scss test/test.scss"
+  },
   "author": "Netvlies",
   "license": "MIT",
   "repository": {
@@ -16,5 +19,8 @@
   "main": "index.js",
   "dependencies": {
     "stylelint-order": "^0.4.3"
+  },
+  "devDependencies": {
+    "stylelint": "^8.0.0"
   }
 }

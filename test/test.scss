@@ -1,0 +1,59 @@
+$variable: 'red';
+
+.selector {
+	position: relative;
+	top: 10rem;
+	right: 1em;
+	bottom: 10%;
+	left: 40vh;
+	z-index: 1;
+	display: inline-block;
+	flex: 1 0 auto;
+	align-items: center;
+	justify-content: center;
+	order: 2;
+	perspective: 1000px;
+	transform: translateX(-50%) rotate(1turn);
+	float: left;
+	clear: right;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 100%;
+	min-width: 50%;
+	max-width: 200px;
+	height: 100vh;
+	min-height: 50em;
+	max-height: 20rem;
+	margin: 0 0 20em 10rem;
+	padding: 20rem 1% 0 2%;
+	color: $variable;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	line-height: 1;
+	list-style: lower-alpha;
+	text-align: right;
+	text-indent: 20px;
+	white-space: nowrap;
+	word-break: break-all;
+	background: $variable linear-gradient(transparent, $variable) no-repeat center;
+	background-size: cover;
+	border: 1px solid $variable;
+	outline: 10em dotted $variable;
+	box-shadow: 0 0 2em 0.5em rgba($variable, 0.5);
+	animation: animation-name 0.2s 0.1s ease-in-out;
+	transition: transform 0.2s ease-in;
+	pointer-events: none;
+	appearance: none;
+	will-change: transform;
+}
+
+@keyframes animation-name {
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
