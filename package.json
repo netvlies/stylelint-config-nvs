@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-nvs",
-  "version": "0.2.5",
+  "version": "1.0.0",
   "description": "Stylelint shareable config used by Netvlies",
   "keywords": [
     "stylelint",
