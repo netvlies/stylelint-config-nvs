@@ -1,12 +1,15 @@
 {
   "name": "stylelint-config-nvs",
-  "version": "0.2.5",
+  "version": "1.0.0",
   "description": "Stylelint shareable config used by Netvlies",
   "keywords": [
     "stylelint",
     "stylelintconfig",
     "netvlies"
   ],
+  "scripts": {
+    "test": "stylelint --formatter verbose --config ./index.js --syntax scss test/order.scss"
+  },
   "author": "Netvlies",
   "license": "MIT",
   "repository": {
@@ -16,5 +19,8 @@
   "main": "index.js",
   "dependencies": {
     "stylelint-order": "^0.4.3"
+  },
+  "devDependencies": {
+    "stylelint": "^8.0.0"
   }
 }
