@@ -8,7 +8,7 @@
     "netvlies"
   ],
   "scripts": {
-    "test": "stylelint --config ./index.js --syntax scss test/test.scss"
+    "test": "stylelint --formatter verbose --config ./index.js --syntax scss test/order.scss"
   },
   "author": "Netvlies",
   "license": "MIT",
