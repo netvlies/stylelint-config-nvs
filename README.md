@@ -1,6 +1,6 @@
 # stylelint-config-nvs
 
-[![NPM version](http://img.shields.io/npm/v/stylelint-config-nvs.svg)](https://www.npmjs.org/package/stylelint-config-nvs)
+[![NPM version](http://img.shields.io/npm/v/stylelint-config-nvs.svg)](https://www.npmjs.org/package/stylelint-config-nvs) [![Build Status](https://travis-ci.org/netvlies/stylelint-config-nvs.svg?branch=master)](https://travis-ci.org/netvlies/stylelint-config-nvs)
 
 > The [Netvlies](https://www.netvlies.nl) shareable config for stylelint.
 
