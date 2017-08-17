@@ -1,3 +1,4 @@
+warnings_are_errors: true
 language: node_js
 node_js:
   - 8
