@@ -48,6 +48,8 @@ module.exports = {
 		"declaration-colon-space-before": "never",
 
 		"order/order": [
+			"custom-properties",
+            "dollar-variables",
 			{
 				"type": "at-rule",
 				"name": "extend"
@@ -55,14 +57,14 @@ module.exports = {
 			{
 				"type": "at-rule",
 				"name": "include",
-				"parameter": /^(?!respond-to\(.*\)$)/
+				"parameter": "^((?!respond-to|hocus).)*$"
 			},
+			"declarations",
+			"rules",
 			{
 				"type": "at-rule",
 				"name": "media"
-			},
-			"declarations",
-			"rules"
+			}
 		],
 		"order/properties-order": [
 			[{
